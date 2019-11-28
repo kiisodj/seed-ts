@@ -1,0 +1,17 @@
+{
+  "name": "x",
+  "version": "1.0.0",
+  "description": "Experiment x",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@aerian/eslint-config": "^6.0.4",
+    "@aerian/eslint-config-node": "^6.0.4",
+    "eslint": "^6.7.1",
+    "typescript": "^3.7.2"
+  }
+}

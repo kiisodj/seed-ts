@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "@aerian/eslint-config",
+        "@aerian/eslint-config-node"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017
+    }
+}
