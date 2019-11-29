@@ -1,9 +1,9 @@
 {
     "extends": [
         "@aerian/eslint-config",
-        "@aerian/eslint-config-node"
+        "@aerian/eslint-config-typescript"
     ],
     "parserOptions": {
-        "ecmaVersion": 2017
+        "ecmaVersion": 2017 /*fiiva*/
     }
 }

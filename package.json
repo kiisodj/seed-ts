@@ -2,7 +2,11 @@
   "name": "x",
   "version": "1.0.0",
   "description": "Experiment x",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "main": "dist/index.js",
+  "repository": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "@aerian/eslint-config": "^6.0.4",
-    "@aerian/eslint-config-node": "^6.0.4",
+    "@aerian/eslint-config-typescript": "^6.0.4",
+    "@types/node": "^12.12.14",
     "eslint": "^6.7.1",
+    "tsc-watch": "^4.0.0",
     "typescript": "^3.7.2"
   }
 }
