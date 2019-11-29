@@ -8,16 +8,37 @@
   "main": "dist/index.js",
   "repository": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "compile": "tsc",
+    "lint": "eslint \"./**\"",
+    "lint-fix": "eslint \"./**\" --fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@aerian/eslint-config": "^6.0.4",
-    "@aerian/eslint-config-typescript": "^6.0.4",
+    "@aerian/eslint-config": "^7.0.0",
+    "@aerian/eslint-config-typescript": "^7.0.0",
+    "@types/jest": "^24.0.23",
     "@types/node": "^12.12.14",
     "eslint": "^6.7.1",
+    "jest": "^24.2.0",
+    "ts-jest": "^24.2.0",
     "tsc-watch": "^4.0.0",
     "typescript": "^3.7.2"
+  },
+  "dependencies": {},
+  "jest": {
+    "transform": {
+      ".*": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "collectCoverage": true,
+    "testURL": "http://example.com"
   }
 }
