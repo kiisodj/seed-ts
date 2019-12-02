@@ -10,8 +10,8 @@
   "scripts": {
     "test": "jest",
     "compile": "tsc",
-    "lint": "eslint \"./**\"",
-    "lint-fix": "eslint \"./**\" --fix"
+    "lint": "eslint . --ext=ts,js && prettier --write '*.{css,md,scss,html,json}'",
+    "lint-fix": "eslint . --fix --ext=ts,js && prettier --write '*.{css,md,scss,html,json}'"
   },
   "author": "",
   "license": "ISC",
