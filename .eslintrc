@@ -4,6 +4,6 @@
         "@aerian/eslint-config-typescript"
     ],
     "parserOptions": {
-        "ecmaVersion": 2017 /*fiiva*/
+        "ecmaVersion": 2017
     }
 }

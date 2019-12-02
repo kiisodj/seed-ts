@@ -15,6 +15,7 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@aerian/eslint-config": "^7.0.0",
     "@aerian/eslint-config-typescript": "^7.0.0",
@@ -26,7 +27,6 @@
     "tsc-watch": "^4.0.0",
     "typescript": "^3.7.2"
   },
-  "dependencies": {},
   "jest": {
     "transform": {
       ".*": "ts-jest"
