@@ -9,7 +9,9 @@
   "repository": {},
   "scripts": {
     "test": "jest",
-    "compile": "tsc",
+    "start": "tsc --watch",
+    "compile-babel": "babel ./src  --out-dir ./dist --extensions '.ts, .js'",
+    "compile-tsc": "tsc",
     "lint": "eslint . --ext=ts,js && prettier --write '*.{css,md,scss,html,json}'",
     "lint-fix": "eslint . --fix --ext=ts,js && prettier --write '*.{css,md,scss,html,json}'"
   },
@@ -19,12 +21,16 @@
   "devDependencies": {
     "@aerian/eslint-config": "^7.0.0",
     "@aerian/eslint-config-typescript": "^7.0.0",
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.14",
     "eslint": "^6.7.1",
     "jest": "^24.2.0",
     "ts-jest": "^24.2.0",
-    "tsc-watch": "^4.0.0",
     "typescript": "^3.7.2"
   },
   "jest": {
